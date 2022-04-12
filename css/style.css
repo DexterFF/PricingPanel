@@ -51,37 +51,96 @@ table {
 
 body
 {
-    font-family: 'Anek Odia', sans-serif;
     background-color: #0077b6;
     display: flex;
+    justify-content: center;
     align-items: center;
+    font-family: 'Roboto', sans-serif;
     height: 100vh;
     width: 100vw;
 }
 
 main
 {
-    width: 100%;
     display: flex;
     flex-direction: row;    
     justify-content: center;
     flex-wrap: nowrap;
+    box-shadow: 0 0 7px #e5e5e5;
+    border-radius: 1em;
+    background-color: white;
+    width: 50%;
 }
 
 main section.panel
 {
-    background-color: white;
     box-sizing: border-box;
-    padding: 4em;
-    border-right: 1px solid black;
+    padding: 2em;
+    border-right: 1px solid #e5e5e5;
+    flex-grow: 1;    
     overflow: hidden;
-    max-width: 20%;
+    text-align: center;
+}
+
+main section.panel img
+{
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+main section.panel .serviceName
+{
+    font-size: 1.3em;
+    color: #909ba5;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 1em;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+main section.panel p
+{
+    font-size: .9em;
+    color: #0077b6;
+    font-weight: 300;
+    text-transform: uppercase;
+    padding: 1em;
+    border-bottom: 1px solid #e5e5e5;
+    text-shadow: 0 0 0px #000;
+}
+
+main section.panel p.prices
+{
+    font-weight: 700;
+    font-size: 1.8em;
+    text-shadow: none;
+    border-bottom: none;
+}
+
+main section.panel button
+{
+    font-size: 1em;
+    padding: 0.5em 1.5em;
+    border-radius: 0.3em;
+    border: 1px solid #0077b6;
+    background-color: transparent;
+    color: #0077b6;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    transition: all .3s linear;
+}
+
+main section.panel button:hover
+{
+    border: 1px solid #0077b6;
+    background-color: #0077b6;
+    color: #FFF;
+    transform: scale(1.1);
 }
 
 main section.panel1
 {
-    border-top-left-radius: 2em;
-    border-bottom-left-radius: 2em;
+    
 }
 
 main section.panel2
@@ -91,7 +150,5 @@ main section.panel2
 
 main section.panel3
 {
-    border-right: none;
-    border-top-right-radius: 2em;
-    border-bottom-right-radius: 2em;    
+    border-right: none;  
 }
